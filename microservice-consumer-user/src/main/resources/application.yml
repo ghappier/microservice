@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: user-consumer
+  profiles:
+    active: prod
+    
+server:
+  port: 3000
+
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:1001/eureka/

@@ -1,0 +1,12 @@
+server:
+  port: 1001
+
+eureka:
+  instance:
+    hostname: peer1
+    instance-id: ${spring.application.name}:${server.port}
+  client:
+    #register-with-eureka: false
+    #fetch-registry: false
+    service-url:
+      defaultZone: http://peer2:1002/eureka/,http://peer3:1003/eureka/
