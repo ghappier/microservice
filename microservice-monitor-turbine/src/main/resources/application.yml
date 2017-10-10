@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: monitor-turbine
+
+server:
+  port: 4002
+
+management:
+  port: 4003
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:1001/eureka/,http://peer2:1002/eureka/,http://peer3:1003/eureka/
+      
+turbine:
+  app-config: user-consumer
+  cluster-name-expression: new String("default")
+  combine-host-port: true

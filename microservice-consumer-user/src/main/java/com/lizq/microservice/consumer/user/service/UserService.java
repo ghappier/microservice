@@ -20,7 +20,7 @@ public class UserService {
 	public ResultData<User> get(@PathVariable int id) {
 		return restTemplate.getForObject("http://user-service/user/" + id, ResultData.class);
 	}
-	private ResultData<User> getFallback(int id) {
+	protected ResultData<User> getFallback(int id) {
 		return new ResultData<User>().fail().msg("断路器信息：错误");
 	}
 }

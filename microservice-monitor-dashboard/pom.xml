@@ -11,11 +11,11 @@
 	</parent>
 
 	<groupId>com.lizq.microservice</groupId>
-	<artifactId>microservice-consumer-user</artifactId>
-	<version>${microservice-consumer-user.version}</version>
+	<artifactId>microservice-monitor-dashboard</artifactId>
+	<version>${microservice-monitor-dashboard.version}</version>
 
-	<name>microservice-consumer-user</name>
-	<description>微服务消费者-用户</description>
+	<name>microservice-monitor-dashboard</name>
+	<description>微服务仪表盘监控</description>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -24,32 +24,19 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.lizq.microservice</groupId>
-			<artifactId>microservice-commons</artifactId>
-			<version>${microservice-commons.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-ribbon</artifactId>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-hystrix</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 	</dependencies>
-	
+
 	<build>
 		<plugins>
 			<plugin>
@@ -58,5 +45,5 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+
 </project>
