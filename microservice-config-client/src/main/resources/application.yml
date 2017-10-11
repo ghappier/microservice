@@ -1,6 +1,0 @@
-spring:
-  application:
-    name: myconfig
-
-server:
-  port: 7001

@@ -1,6 +1,6 @@
 spring:
   application:
-    name: myconfig
+    name: myconfig #name的值必须与config-repo目录下的文件名相同
   cloud:
     config:
       profile: dev

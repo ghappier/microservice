@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class ConfigClientController {
 	
+	/**
+	 * 必须要config-server完成启动才能启动本项目，否则会报could not resolve placeholder 'from'的错误
+	 */
 	@Value("${from}")
 	private String from;
 	
