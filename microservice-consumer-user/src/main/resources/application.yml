@@ -2,10 +2,10 @@ spring:
   application:
     name: user-consumer
   profiles:
-    active: prod
+    active: dev
     
 server:
-  port: 3000
+  port: 3001
 
 #eureka:
 #  client:

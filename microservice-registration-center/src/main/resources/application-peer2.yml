@@ -6,7 +6,7 @@ eureka:
     hostname: peer2
     instance-id: ${spring.application.name}:${server.port}
   client:
-    #register-with-eureka: false
-    #fetch-registry: false
+    register-with-eureka: true
+    fetch-registry: true
     service-url:
       defaultZone: http://peer1:1001/eureka/,http://peer3:1003/eureka/
