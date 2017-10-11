@@ -30,6 +30,7 @@
 		<microservice-monitor-turbine.version>1.0.0</microservice-monitor-turbine.version>
 		<microservice-api-gateway.version>1.0.0</microservice-api-gateway.version>
 		<microservice-config-server.version>1.0.0</microservice-config-server.version>
+		<microservice-config-client.version>1.0.0</microservice-config-client.version>
 	</properties>
 
 	<dependencies>
@@ -74,6 +75,7 @@
 		<module>microservice-monitor-turbine</module>
 		<module>microservice-api-gateway</module>
 		<module>microservice-config-server</module>
+		<module>microservice-config-client</module>
 	</modules>
 
 </project>
