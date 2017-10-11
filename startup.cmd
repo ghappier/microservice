@@ -27,3 +27,6 @@ start cmd /k "title turbine&&java -jar D:\EclipseWorkspaces\SpringCloud\microser
 
 %SLEEP% 5 > nul
 start cmd /k "title gateway&&java -jar D:\EclipseWorkspaces\SpringCloud\microservice\microservice-api-gateway\target\microservice-api-gateway-1.0.0.jar"
+
+%SLEEP% 5 > nul
+start cmd /k "title configserver&&java -jar D:\EclipseWorkspaces\SpringCloud\microservice\microservice-config-server\target\microservice-config-server-1.0.0.jar"

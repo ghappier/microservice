@@ -19,3 +19,6 @@ TASKKILL /FI "WINDOWTITLE eq turbine*" /IM cmd.exe /F /T
 %SLEEP% 1 > nul
 
 TASKKILL /FI "WINDOWTITLE eq gateway*" /IM cmd.exe /F /T
+%SLEEP% 1 > nul
+
+TASKKILL /FI "WINDOWTITLE eq configserver*" /IM cmd.exe /F /T
